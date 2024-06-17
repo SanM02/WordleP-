@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Inicio Wordle P+</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="wordle-logo (1).png" alt="Logo de Wordle" class="iniciologo">
+    <link rel="icon" href="wordle_logo_512x512.ico">
+    <h2 class="inicioh2">Wordle P+</h2>
+    <button class="inicioboton" id="start-button">Iniciar</button>
+    <h3 class="inicioh3">Buena Suerte!</h3>
+    <p class="iniciofecha" id="fecha"></p>
+
+    <script>
+        document.getElementById('start-button').addEventListener('click', function() {
+            window.location.href = 'index.html'; // Cambia esto a la ruta de tu página de Wordle
+        });
+        let fechaEspecifica = new Date();
+let dia = fechaEspecifica.getDate();
+let mes = fechaEspecifica.toLocaleString('default', { month: 'long' });
+let año = fechaEspecifica.getFullYear();
+
+document.getElementById('fecha').innerHTML = `${dia} ${mes}, ${año}`;
+    </script>
+</body>
+</html>

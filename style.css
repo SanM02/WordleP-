@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+body {
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #101010;
+    font-family:'Roboto Mono', monospace;
+    margin-top: 0;
+}
+header {
+    border-top: 2px solid #000; /* Línea arriba */
+    border-bottom: 2px solid #000; /* Línea abajo */
+    text-align: center; /* Centra el texto */
+    padding: 20px 0; /* Espacio alrededor del texto */
+    width: 100%; /* Asegura que el encabezado ocupe todo el ancho de la página */
+    background-color: #fff;
+}
+.iniciologo {
+    align-self: center;
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    left: 52.4%;
+    top: 26%;
+    transform: translate(-50%, -50%);
+    height: 250px;
+}
+.inicioh2 {
+    align-self: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: "roboto mono";
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+}
+.iniciofecha
+{
+    align-self: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: "roboto mono";
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+}
+.inicioh3 {
+    align-self: center;
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    font-family: "roboto mono";
+}
+.inicioboton
+{
+    background-color: #8a8a8a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "roboto mono";
+    transition: 0.3;
+    opacity: 0.6;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+.inicioboton:hover {
+    opacity: 1;
+}
+
+.titulo {
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la vista */
+}
+
+.casilla-de-letra {
+    border: none;
+    border-radius: 10%;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Crea una cuadrícula de 5 columnas */
+    grid-template-rows: repeat(6, 1fr); /* Crea una cuadrícula de 6 filas */
+    gap: 10px; /* Espacio entre las casillas */
+    justify-items: center; /* Centra las casillas en sus celdas */
+    width: 50%; /* Ancho del contenedor de las casillas */
+    margin-bottom: 20px;
+}
+
+.casilla {
+    border: none;
+    border-radius: 10%;
+    background-color: rgb(41, 40, 38);
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.teclado {
+    width: max-content;
+    margin:0;
+} 
+.fila {
+    display: flex;
+    justify-content: start;
+}
+.fila-ultima {
+    display: flex;
+    justify-content: center;
+}
+
+.tecla {
+    border-radius: 10%;
+    border: none;
+    width: 50px;
+    margin: 2px;
+    margin-bottom: 5px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.tecla:hover {
+    background-color: #007BFF;
+    color: #ffffff;
+}
+.tecla:active {
+    background-color: #0056b3;
+    color: #ffffff;
+}
+.tecla-enter {
+    order: -1 ;
+    background-color: #908f8f;
+}
+.tecla-borrar {
+    order: 1;
+    background-color: #908f8f;
+
+}
